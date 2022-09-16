@@ -5,7 +5,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-    background-color: black;
+    background-color: paleturquoise;
 }
 header{
     width: 100%;
@@ -15,30 +15,32 @@ header{
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
-    color: green;
+    color: #299617;
 }
-.box1, .box2, .box3{
-    border: 1px solid white;
-    width: 32%;
+.box1 {
+    border: 1px solid black;
     float: left;
-    background-color: black;
-    color: green;
-}
-.box1{
-    margin-top: 20px;
-    margin-left: 1%;
-    margin-bottom: 20px;
-}
-.box2{
+    background-color: royalblue;
+    color: peachpuff;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 1%;
 }
-.box3{
+.box2 {
+    border: 1px solid black;
+    float: left;
+    background-color: #ffc1cc;
+    color: #D2042D;
     margin-top: 20px;
-    margin-left: 1%;
     margin-bottom: 20px;
-    margin-right: 1%;
+    ffc1cc
+}
+.box3 {
+    border: 1px solid black;
+    float: left;
+    background-color: lavender;
+    color: teal;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 h2{
     height: 10%;
@@ -47,10 +49,48 @@ h2{
     padding: 10px;
     position: relative;
     left: 50%;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
     font-weight: bold;
 }
 p{
     padding: 10px;
+}
+@media (min-width: 992px) {
+    .box1 {
+        width: 30.66%;
+        margin-left: 2%;
+    }
+    .box2 {
+        width: 30.66%;
+        margin-left: 2%;
+    }
+    .box3 {
+        width: 30.66%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .box1 {
+        width: 44%;
+        margin-left: 4%;
+    }
+    .box2 {
+        width: 44%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .box3{
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+@media (max-width: 767px) {
+    .box1, .box2, .box3 {
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
 }
